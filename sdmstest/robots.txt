@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /images/team1.jpg
+Disallow: /images/team2.jpg
+Disallow: /images/team3.jpg
+Disallow: /images/team4.jpg
+Disallow: /images/team5.jpg
+Disallow: /en/images/team1.jpg
+Disallow: /en/images/team2.jpg
+Disallow: /en/images/team3.jpg
+Disallow: /en/images/team4.jpg
+Disallow: /en/images/team5.jpg

@@ -1,0 +1,178 @@
+﻿<!-- 隱私權 -->
+ <div id="div_background" style="width: 100%;height: 100%;position:fixed;top :0px;background-color:#000;background: rgba(0, 0, 0, 0.5);z-index: 9999;">
+<div id="privacyBottomBar" class="pri_pro_box">
+  <p>
+	  This website instituted the privacy policy to protect your privacy on the website, please click the "Agree" button if you agree to our privacy policy. 
+For more details, please click <a style="cursor: pointer; color:blue;" data-toggle="modal" data-target="#exampleModalCenter" data-backdrop="static"  data-keyboard="false" onclick="HideArea();">The Privacy Policy of Sing Da Marine Structure Website</a>.
+</p>
+  <div class="text-center">
+	<a style="cursor:pointer" class="btn_agree" onclick="ActionCookie();">Agree</a>
+	<a style="cursor:pointer" class="btn_agree" data-nagree onclick="RedirectIndex();">No Agree</a>					
+  </div>
+</div>
+</div>
+	<style>
+		.pri_pro_box{
+	width: 370px;
+	background: #fff;
+	border: 2px solid #005aad;
+	padding: 12PX 15px 15px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 999;
+	transition: .3s;
+	}
+	.pri_pro_box:hover{
+	border-radius: 20px;
+	transition: .3s;
+
+	}
+	.pri_pro_box a{
+	color: #005aad;
+	}
+	.text-center{
+	text-align: center;
+	}
+	.pri_pro_box a.btn_agree{
+	background:#005aad;
+	padding: 15px;
+	color: #fff;
+	transition: .3s;
+	}
+	.pri_pro_box a.btn_agree:hover{
+	border-radius: 10px;
+	transition: .3s;
+	}	
+	.modal-lg{
+				max-width: 90%;
+		text-align: left;
+		
+	}
+	</style>
+<script src="js/Privacy.js"></script>
+
+	 <!-- 隱私權 結束-->
+	<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+					<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">The Privacy Policy</h5>											
+			</button>
+					</div>
+					<div class="modal-body">
+									<div class="row">
+		    <div class="col-xl-12">
+	        <div class="about-left-content">
+	          <div class="sec-title">
+	            <div class="title clr2">The Privacy Policy of Sing Da Marine Structure Website</div>
+	          </div>
+	          <div class="inner-content">		  
+				  
+				  
+	            <p>You are welcome to visit Sing Da Marine Structure (SDMS) website (https://www.sdms.com.tw, the website). We comply with the "Personal Information Protection Act" and related regulations in Taiwan, and understand/value privacy policy, information secrecy and confidential issues for visitors and users to the website. For your using of the website’s service and information without any uneasiness, SDMS hereby explain the website’s privacy policy in detail to protect your rights and interests. Please read the following contents carefully.</h3>
+				  <h3>1. The Ambit of Privacy Policy</h3>				
+		          <p>	  
+				 While you are using website’s service, the website collects identifiable personal information. The privacy policy includes how the website processes these identifiable personal information, and does not apply to related linked websites outside the website, nor to those who are not entrusted or involved in the management of the website.</p>
+				  
+				  <h3>2. The Purpose and Classification of Collecting Personal Data</h3>
+		          <p>	  
+				  If you are a visitor to the website, you are allowed to access the website without providing any personal information. For your necessities to get the website’s services and ensuring the website to provide necessary services continuously, the website will collect your personal information.</p>	
+				  
+				  <h3>3. The Collection, Process and Use of Personal Data</h3>
+		          <ul style="margin: 1%;">
+				  <li>●	When you visit the website or use the services provided by the website, we will ask you to provide necessary personal information with regards to the service essence, and only process and use your personal information within specific purpose and ambit; the website will not use your personal data for other purposes without your agreement.</li>
+				  <li>●	The website will keep your name, email address, contact information and usage time while you use interactive functions such as service mailbox or questionnaires.</li>
+				  <li>●	During browsing, the website will automatically keep records of equipment’s IP address, usage time, browser type and browsing history, etc. All those records are for internal application traffic analysis only, will not be published, not be associated with specific individual, and will not be analyzed for specific record.</li>
+				  <li>●	In order to provide accurate services, we will analyze collected questionnaires and data. Except for internal research, the analysis result of statistical data or explanatory will be published without involving any specific individual information if necessary.</li>
+
+		          </ul><br>
+
+				  
+				  <h3>4. The Protection of Data</h3>
+		          <ul style="margin: 1%;">
+				  <li>●	We endeavor to protect the website and your personal information with reasonable technology, procedures and related information security equipment and necessary measures. Only authorized personnel can access your personal data. All of related personnel will sign confidentiality contract, and will be subject to related legal actions if violating the confidentiality obligations.</li>
+				  <li>●	When it is necessary to entrust other organizations to provide services due to business needs, the website will request those organizations to take appropriate security maintenance measures and comply the confidentiality obligations. We will take every necessary inspection procedures to ensure those measures and obligations will be complied.</li>
+		          </ul>		<br>  
+	
+				  <h3>5. Link to Other Sites</h3>
+		          <p>	  
+				  This privacy policy and other notices of the website are only applicable to the website.The website provide links to other websites, and you can access other websites by clicking links from the website. However, the linked websites may not be subject to this privacy policy of the website, you must refer to the privacy policy of those linked websites.</p>			  
+				  
+				  
+	
+				  <h3>6. Transfer of Data</h3>			  
+				  This website will never provide, exchange, rent or sell any of your personal data to other individuals, groups, private companies or public authorities, except where there is a legal basis or contractual obligations.<br>
+
+The circumstances of the preceding paragraph include but are not limited to:
+
+		  
+		          <ul style="margin: 1%;">
+				  <li>●	By your consent.</li>
+				  <li>●	By law obligations.</li>
+				  <li>●	To avoid the danger of your life, body, freedom or property.</li>
+				  <li>●	To collaborate with public agencies or academic research institutions, due to the necessary of statistical or academic research based on public interest, and the data which is processed by the provider or the collector cannot identify the particular party in the manner in which it is disclosed.</li>
+				  <li>●	To identify, contact or take legal actions through the website administrator’s analysis, due to your activities on the website violate the Terms of Service or may harm or hinder the website other user rights or cause harm to anyone.</li>
+				  <li>●	To conducive to your rights and interests.</li>
+				  <li>●	When the commissioned vendor of the website is asked to assist in the collection, processing or use of your personal data, it will be responsible for the supervision and management of the subcontractor or individual.</li>
+
+
+		          </ul>			<br>		  
+				  
+	
+				  <h3>7. Right of the parties</h3>
+  
+				  The parties to the collection of personal data on the website may exercise the following rights in accordance with the Personal Data Protection Act:
+		  
+		          <ul style="margin: 1%;">
+				  <li>●	Query or request a review.</li>
+				  <li>●	Request a copy to the copy.</li>
+				  <li>●	Request supplements or corrections.</li>
+				  <li>●	Request to stop collecting, processing, and utilizing.</li>
+				  <li>●	Request to delete.</li><br>
+However, this is not the case for those who are required to perform duties or business on the website.
+
+
+		          </ul>	<br>
+				  
+				  <h3>8. Use of Cookies</h3>
+		          <p>	  
+				  In order to provide you with the best service, the website will place and access our cookies on your computer. If you do not accept cookies, you can set the privacy level in your browser privacy settings such as high, or through the browser's cancellation or limitation of this feature. You can refuse cookies, but may lead to some features of the website cannot be executed normally.</p>					  
+				  
+				  
+				  <h3>9. Changes to This Privacy Policy</h3>
+		          <p>	 
+					The privacy policy of the website will be amended at any time according to the needs. The revised terms will be posted on the website without any separate notice. You can read the revised privacy statement and related notices on this website at any time. If you have any questions about the privacy statement of the website or related matters related to your personal information, please contact <a href="mailto:service@sdms.com.tw">service@sdms.com.tw</a>.
+  
+				 </p>					  
+				  			  
+				  
+	          </div>
+				
+				
+				
+	        </div>
+		    </div>
+
+
+			</div>
+							<div class="modal-footer">
+									<a style="cursor:pointer" class="btn_agree" onclick="ActionCookie();">Agree</a>
+							</div>
+					</div>
+			</div>
+	</div>
+</div>
+<style>
+	.modal-footer a.btn_agree{
+	background:#005aad;
+	padding: 15px;
+	color: #fff;
+	transition: .3s;
+	}
+	.modal-footer a.btn_agree:hover{
+	border-radius: 10px;
+	transition: .3s;
+	}
+</style>

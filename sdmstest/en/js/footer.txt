@@ -1,0 +1,66 @@
+﻿<div class="container">
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+      <div class="single-footer-widget marbtm50">
+        <div class="title">
+          <h3>Where We Are</h3>
+        </div>
+        <div class="state-select-box">
+          <div class="state-content">
+            <div class="state" id="value1">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-global"></span>
+                  </div>
+                  <div class="text">
+                    <p>No. 201, Sec. 1, Dongfang Rd., Qieding Dist., Kaohsiung City 85243, Taiwan(R.O.C)</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-phone"></span>
+                  </div>
+                  <div class="text">
+                    <p>+886(7)-608-0088</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="single-footer-widget margin-left">
+        <div class="title">
+          <h3>Quick Links</h3>
+        </div>
+        <ul class="quick-links">
+          <!--<li><a href="news.html"><i class="fa fa-angle-double-right"></i>News</a></li> -->
+          <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+          <li><a href="business.html"><i class="fa fa-angle-double-right"></i>Business Lines</a></li>
+          <li><a href="csr.html"><i class="fa fa-angle-double-right"></i>CSR </a></li>
+          <!--<li><a href="quality.html"><i class="fa fa-angle-double-right"></i>QS Certification</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i>Business Performance</a></li> -->
+          <li><a href="recruiting.html"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+          <li><a href="contactUs.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+          <li><a href="sitemap.html"><i class="fa fa-angle-double-right"></i>Sitemap</a></li>
+          <li><a href="abo_pr.html"><i class="fa fa-angle-double-right"></i>The Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="single-footer-widget pdtop-50">
+        <div class="title">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="subscribe-form">
+          <div class="text">
+            <p>service@sdms.com.tw</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

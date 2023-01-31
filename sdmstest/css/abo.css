@@ -1,0 +1,19 @@
+.single-service-style1{
+  min-height: 50px;
+  padding: 20px;
+}
+.single-service-style1 .text-holder h3{
+  font-weight: 700;
+}
+.pro-img-area {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.pro-img-area .sec-title p{
+  margin: 22px 0 0;
+}
+.pro-cap-bg{
+  background: url('../images/pro_cap_bg.jpg')no-repeat;
+  height: 400px;
+}

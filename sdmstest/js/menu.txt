@@ -1,0 +1,88 @@
+﻿<div class="header-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12">
+        <div class="inner-content clearfix">
+          <div class="header-middle clearfix text-center">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/LOGO.png" width="100" height="100" alt="興達海">
+              </a>
+            </div>
+          </div>
+          <section class="mainmenu-area stricky">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                  <div class="inner-content">
+                    <nav class="main-menu text-center clearfix">
+                      <div class="navbar-header clearfix">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      </div>
+                      <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                          <!--<li><a href="news.html">最新消息</a></li>-->
+                          <li class="dropdown"><a id="a1" href="#" onclick="doClickEven('block')">認識興達海基</a>
+                            <ul id='ul1'>
+                              <li><a href="about.html">公司發展</a></li>
+                              <li><a href="history.html">公司大事紀</a></li>
+                              <li><a href="ProductionCapacity.html">生產能力</a></li>
+                              <li><a href="TechnologyTransfer.html">技術移轉</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="business.html">業務範圍</a></li>
+                          <li><a href="csr.html">企業社會責任</a></li>
+                          <li class="dropdown"><a id="a2" href="#" onclick="quClickEven('block')">品質與工安</a>
+                              <ul id='ul2'>
+                              <li><a href="HSE.html">環安衛</a></li>
+                              <li><a href="quality.html">品質系統認證</a></li>
+                            </ul>
+                          </li>
+                          <!--<li><a href="#">業務實績</a></li>-->
+                          <li><a href="recruiting.html">人才招募</a></li>
+                          <li><a href="contactUs.html">聯絡我們</a></li>
+                          <li><a href="en/index.html">EN</a></li>
+
+						  <!--<li class="hidden-pc"><a href="en/index.html">英文版</a></li>-->
+
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+                <!--
+				<div class="col-xl-1 col-lg-1 icon">
+                <a href="en/index.html">
+                    <span class="flaticon-internet"></span>
+                  </a>
+                </div>
+				-->
+              </div>
+            </div>
+          </section>
+		  <script>
+		function doClickEven(str) {
+				if(str == 'block')
+					$("#a1").attr("onclick", "doClickEven('')");
+				else
+					$("#a1").attr("onclick", "doClickEven('block')");
+			    $('#ul1').css('display', str);
+			} 
+
+     function quClickEven(str) {
+				if(str == 'block')
+					$("#a2").attr("onclick", "quClickEven('')");
+				else
+					$("#a2").attr("onclick", "quClickEven('block')");
+			    $('#ul2').css('display', str);
+			} 
+		  </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

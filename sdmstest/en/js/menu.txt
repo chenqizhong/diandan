@@ -1,0 +1,83 @@
+﻿<div class="header-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12">
+        <div class="inner-content clearfix">
+          <div class="header-middle clearfix text-center">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/LOGO.png" width="100" height="100" alt="SinDa Marine Structure">
+              </a>
+            </div>
+          </div>
+          <section class="mainmenu-area stricky">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-11 col-lg-11 col-md-12">
+                  <div class="inner-content">
+                    <nav class="main-menu text-center clearfix">
+                      <div class="navbar-header clearfix">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      </div>
+                      <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                          <!-- <li><a href="news.html">News</a></li> -->
+                          <li class="dropdown"><a id="a1" href="#" onclick="doClickEven('block')">About Us</a>
+                            <ul id='ul1'>
+                              <li><a href="about.html">Company Development</a></li>
+                              <li><a href="history.html">Milestones</a></li>
+                              <li><a href="ProductionCapacity.html">Production Capacity</a></li>
+                              <li><a href="TechnologyTransfer.html">Technology Transfer</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="business.html">Business Lines</a></li>
+
+                          <li><a href="csr.html">CSR</a></li>
+                          <li class="dropdown"><a id="a2" href="#" onclick="quClickEven('block')">HSE & QS</a>
+                              <ul id='ul2'> 
+                              <li><a href="HSE.html">Safety and Environment Protection</a></li>
+                              <li><a href="quality.html">Quality</a></li>
+                            </ul>
+                          </li>
+                          <!--<li><a href="#">Business Scope</a></li>-->
+                          <li><a href="recruiting.html">Careers</a></li>
+                          <li><a href="contactUs.html">Contact Us</a></li>
+                          <li class="hidden-pc"><a href="../index.html">Chinese</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-xl-1 col-lg-1 icon">
+                  <a href="../index.html">
+                    <span class="flaticon-internet"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+		  <script>
+			function doClickEven(str) {
+				if(str == 'block')
+					$("#a1").attr("onclick", "doClickEven('')");
+				else
+					$("#a1").attr("onclick", "doClickEven('block')");
+			    $('#ul1').css('display', str);
+			}
+           function quClickEven(str) {
+				if(str == 'block')
+					$("#a2").attr("onclick", "quClickEven('')");
+				else
+					$("#a2").attr("onclick", "quClickEven('block')");
+			    $('#ul2').css('display', str);
+			} 
+		  </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

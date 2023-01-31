@@ -1,0 +1,66 @@
+﻿<div class="container">
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+      <div class="single-footer-widget marbtm50">
+        <div class="title">
+          <h3>Where We Are</h3>
+        </div>
+        <div class="state-select-box">
+          <div class="state-content">
+            <div class="state" id="value1">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-global"></span>
+                  </div>
+                  <div class="text">
+                    <p>85243高雄市茄萣區東方路一段201號</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-phone"></span>
+                  </div>
+                  <div class="text">
+                    <p>+886(7)-608-0088</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="single-footer-widget margin-left">
+        <div class="title">
+          <h3>Quick Links</h3>
+        </div>
+        <ul class="quick-links">
+          <!-- <li><a href="news.html"><i class="fa fa-angle-double-right"></i>最新消息</a></li> -->
+          <li><a href="about.html"><i class="fa fa-angle-double-right"></i>認識興達海基</a></li>
+          <li><a href="csr.html"><i class="fa fa-angle-double-right"></i>企業社會責任</a></li>
+          <!-- <li><a href="quality.html"><i class="fa fa-angle-double-right"></i>品質與工安</a></li> -->
+          <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i>業務實績</a></li> -->
+          <li><a href="recruiting.html"><i class="fa fa-angle-double-right"></i>人才招募</a></li>
+          <li><a href="contactUs.html"><i class="fa fa-angle-double-right"></i>聯絡我們</a></li>
+          <li><a href="sitemap.html"><i class="fa fa-angle-double-right"></i>網站導覽</a></li>
+          <li><a href="abo_pr.html"><i class="fa fa-angle-double-right"></i>隱私權政策</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="single-footer-widget pdtop-50">
+        <div class="title">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="subscribe-form">
+          <div class="text">
+            <p>service@sdms.com.tw</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
