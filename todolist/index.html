@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./todolist.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!--切版顏色
+  <style>
+    .testbackground {
+      border: 1px solid red;
+    }
+
+    .testbackground2 {
+      border: 1px solid green;
+    }
+
+    .testbackground3 {
+      border: 1px solid blue;
+    }
+  </style>
+  -->
+</head>
+
+<body>
+
+  <div id="alert" class="alert-01 alert alert-warning alert-dismissible fade show" role="alert">
+    要記得輸入內容嘿!!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="alertIn()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+  <h1>ToDoList</h1>
+<br>
+  <div class="container testbackground">
+    <div class="row testbackground2">
+      <div class="col-12 col-md-12  testbackground3" id="firstBlock">
+        <!--Down-->
+        <div class="input-group mb-3">
+          <!--inpute-->
+          <input id="ToDoList" type="text" class="form-control" placeholder="請輸入內容" aria-label="Recipient's username"
+            aria-describedby="button-addon2" >
+          <div class="input-group-append">
+            <!--傳送submit-->
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon2" onclick="AddToDo()">記事</button>
+          </div>
+        </div>
+        <!--Up-->
+      </div>
+      <div class="col-12 col-md-12  testbackground3">
+        <br />
+        <div id="seconfBlock">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<button onclick="reset()">重置測試鈕</button> 測試localStorage用-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./todolist.js"></script>
+</body>
+
+</html>
