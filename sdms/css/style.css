@@ -13127,3 +13127,14 @@ select:focus {
     -webkit-text-stroke: 2px #efe4d1;
 
 }
+.wel-box-4hDivSpan{
+    display: inline-block;
+}
+.wel-box-4hDivSpan-2{
+    display: inline-block;
+    margin-left: 150px;
+}
+.wel-box-position{
+    position: relative;
+    top: 10px;
+}
