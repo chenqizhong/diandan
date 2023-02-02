@@ -2504,7 +2504,8 @@ select:focus {
     font-size: 18px;
     line-height: 26px;
 }
-.single-service-style1-1{
+
+.single-service-style1-1 {
     color: white;
     position: relative;
     display: block;
@@ -2517,6 +2518,7 @@ select:focus {
     background: #083061;
     border-color: #083061;
 }
+
 .single-service-style1 {
     position: relative;
     display: block;
@@ -13052,9 +13054,10 @@ select:focus {
     csr style
 =============================================
 ***/
-.m-b-90{
-    margin-bottom:90px ;
+.m-b-90 {
+    margin-bottom: 90px;
 }
+
 .m-b-10 {
     display: block;
     margin-bottom: 10px;
@@ -13072,7 +13075,8 @@ select:focus {
     display: block;
     margin-bottom: 20px;
 }
-.OneESG-fontsize{
+
+.OneESG-fontsize {
     font-size: 25px;
 }
 
@@ -13093,20 +13097,24 @@ select:focus {
     list-style-type: square;
     padding-left: 10px;
 }
-.borderset{
+
+.borderset {
     border-radius: 30px;
     height: 400px;
 }
-.border-blue{
-    border:solid #4394d0 5px;
-    
-}
-.border-green{
-    border:solid #577d26 5px;
+
+.border-blue {
+    border: solid #4394d0 5px;
 
 }
-.border-peru{
-    border:solid #775e21 5px;
+
+.border-green {
+    border: solid #577d26 5px;
+
+}
+
+.border-peru {
+    border: solid #775e21 5px;
 
 }
 
@@ -13115,26 +13123,29 @@ select:focus {
    recruiting style
 =============================================
 ***/
-.marqueeBox{
+.marqueeBox {
     position: relative;
 }
-.marquee{
+
+.marquee {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
-    color: #09fe09;
-    position:absolute;
+    color: white;
+    position: absolute;
     top: 40px;
-    font-size: 100px;
-    -webkit-text-stroke: 2px #efe4d1;
+    left: 20px;
+    font-size: 90px;
+    /* -webkit-text-stroke: 2px #efe4d1; */
 
 }
-.wel-box-4hDivSpan{
-    display: inline-block;
-}
-.wel-box-4hDivSpan-2{
+
+.wel-box-4hDivSpan-2 {
     display: inline-block;
     margin-left: 150px;
+    position: absolute;
 }
-.wel-box-position{
+
+.wel-box-position {
     position: relative;
     top: 10px;
 }
