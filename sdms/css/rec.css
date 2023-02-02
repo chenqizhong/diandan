@@ -1,9 +1,10 @@
-.rec-wel li{
+.rec-wel li {
   position: relative;
   padding-left: 25px;
   line-height: 30px;
 }
-.rec-wel li::before{
+
+.rec-wel li::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -13,39 +14,50 @@
   left: 0;
   top: 8px;
 }
-.wel-box{
-  padding-top: 30px;;
+
+.wel-box {
+  padding-top: 30px;
+  ;
 }
-.wel-box h4{
+
+.wel-box h4 {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   padding: 8px 10px;
   font-size: 18px;
 }
-.wel-box h4 span{
+
+.wel-box h4 span {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
   padding: 10px 15px;
   margin-right: 15px;
 }
-.bg-brown{
+
+.bg-brown {
   background: #775e21;
 }
-.bg-green{
+
+.bg-green {
   background: #577d26;
+  padding: 10px 15px;
 }
-.bg-blue{
+
+.bg-blue {
   background: #4394d0;
 }
 
-@media screen and (max-width:375px){
-  .wel-box h4{
+/* 福利螢幕寬度 */
+
+@media screen and (max-width:1500px) {
+  .wel-box h4 {
     position: relative;
     padding: 8px 10px 8px 150px;
     min-height: 62px;
   }
-  .wel-box h4 span{
+
+  .wel-box h4 span {
     padding: 10px;
     margin-right: 10px;
     line-height: 50px;
@@ -53,5 +65,5 @@
     left: 15px;
     top: -5px;
   }
-
 }
+

@@ -13126,7 +13126,6 @@ select:focus {
 .marqueeBox {
     position: relative;
 }
-
 .marquee {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
@@ -13149,3 +13148,11 @@ select:focus {
     position: relative;
     top: 10px;
 }
+
+.wel-box-h4-2{
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+
