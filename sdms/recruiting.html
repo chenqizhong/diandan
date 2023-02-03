@@ -27,7 +27,9 @@
 	<link rel="stylesheet" href="css/slide-style.css">
 
 	<link rel="stylesheet" href="css/rec.css">
-
+	<!-- 相片輪播燈箱 -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/grid/modernizr.custom.js"></script>
 	<!-- Fixing Internet Explorer-->
 	<!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -131,8 +133,7 @@
 
 							<div class="sec-title" style="padding-top:50px ;">
 								<div class="title clr2">
-									<p href='https://www.104.com.tw/company/1a2x6bkmzh?jobsource=jolist_c_relevance'
-										target='_blank'>人才培育及教育訓練</p>
+									<p>人才培育及教育訓練</p>
 								</div>
 							</div>
 							<div class="inner-content" style='margin-bottom:1em'>
@@ -149,8 +150,40 @@
 				</div>
 			</div>
 		</section>
-
 		<!--End about content area-->
+
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- 圖片Grid -->
+				<section class="team-area" style="margin: auto; padding-top: 0px;">
+					<div class="container">
+						<div id="grid-gallery" class="grid-gallery">
+							<section class="grid-wrap">
+								<ul class="grid-rec">
+									<li class="grid-sizer"></li><!-- for Masonry column width -->
+									<li>
+										<figure>
+											<img src="images/recruiting/rec-grid-1.JPG" alt="天清府遊江元帥聖誕祝壽" />
+											<!-- <figcaption>
+												<h3>圖片說明</h3>
+											</figcaption> -->
+										</figure>
+									</li>
+									<li>
+										<figure>
+											<img src="images/recruiting/rec-grid-2.JPG" alt="興達港區淨灘活動" />
+											<!-- <figcaption>
+												<h3>圖片說明</h3>
+											</figcaption> -->
+										</figure>
+									</li>
+								</ul>
+							</section><!-- // grid-wrap -->
+						</div><!-- // grid-gallery -->
+					</div>
+				</section>
+			</div>
+		</div>
 
 		<!--Start about content area-->
 		<section class="about-content-area">
@@ -172,7 +205,10 @@
 								<div class="wel-box">
 									<h4><span class="bg-green">訂餐有補助</span>除伙食津貼外，另提供公司便當訂餐補助。</h4>
 									<h4><span class="bg-brown">工安裝備齊</span>免費制服、工作服、安全背心、安全帽、安全鞋。</h4>
-									<h4><span class="bg-blue">交通不用愁</span><p style="margin-bottom: 0px;">提供高雄市區往返交通車。</p><p style="margin-bottom: 0px;">高雄捷運不定期提供交通優惠方案。</p></h4>
+									<h4><span class="bg-blue">交通不用愁</span>
+										<p style="margin-bottom: 0px;">提供高雄市區往返交通車。</p>
+										<p style="margin-bottom: 0px;">高雄捷運不定期提供交通優惠方案。</p>
+									</h4>
 									<!-- <h4>
 										<div class="col-sm6 wel-box-4hDivSpan"><span
 												class="bg-brown wel-box-position">工安裝備齊</span></div>
@@ -195,20 +231,18 @@
 							<div class="mhn-slide owl-carousel">
 								<div class="mhn-item">
 									<div class="mhn-inner">
-										<img src="images/rec_slide_img9.jpg" alt="">
+										<img src="images/recruiting/rec_slide_img9-2.jpg" alt="">
+									</div>
+								</div>
+								<div class="mhn-item">
+									<div class="mhn-inner">
+										<img src="images/recruiting/rec_slide_img4.jpg" alt="">
 									</div>
 								</div>
 
-
 								<div class="mhn-item">
 									<div class="mhn-inner">
-										<img src="images/rec_slide_img4.jpg" alt="">
-									</div>
-								</div>
-
-								<div class="mhn-item">
-									<div class="mhn-inner">
-										<img src="images/rec_slide_img6.jpg" alt="">
+										<img src="images/recruiting/rec_slide_img6.jpg" alt="">
 									</div>
 								</div>
 							</div>
@@ -219,6 +253,57 @@
 		</section>
 		<!--End about content area-->
 
+
+
+		<section class="about-content-area" style="padding:0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="about-left-content">
+							<!--
+							<div class="sec-title">
+								<div class="title clr2">										
+									<a href='http://114.35.217.149/wpp2019/index.php' target='_blank'>
+										<i class="fa fa-angle-double-right"></i>
+										錄取結果查詢連結</a>										
+								</div>
+							</div>
+							-->
+							<!--
+							<div class="sec-title">
+								<div class="title clr2">
+									招募期間:2019/09/12-10/12
+								</div>
+							</div>
+							-->
+							<div class="sec-title">
+								<div class="title clr2">
+									<!-- <a href='https://www.104.com.tw/company/1a2x6bkmzh?jobsource=jolist_c_relevance'
+										target='_blank'>
+										<i class="fa fa-angle-double-right"></i>
+										徵才說明</a> -->
+									<p class="m-0 contact">與我們聯繫 | Contact Us</p>
+								</div>
+							</div>
+							<div class="inner-content contact" style='margin-bottom:1em;'>
+								若您對於應徵本公司相關職務有任何疑問，歡迎與我們連絡。<br>
+								承辦窗口電話：（07）608-0088 #1111
+								<div>
+									<button style="padding-top: 10px;">
+										<a class="contact button"
+											href="https://www.104.com.tw/company/1a2x6bkmzh?jobsource=jolist_c_relevance"
+											target='_blank'>Find Jobs Now →</a>
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--End about content area-->
 
 		<section class="appointment-style1-area"> </section>
 
@@ -322,6 +407,7 @@
 			});
 		});
 	</script>
+
 </body>
 
 </html>

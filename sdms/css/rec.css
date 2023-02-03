@@ -50,7 +50,7 @@
 
 /* 福利螢幕寬度 */
 
-@media screen and (max-width:2000px) {
+@media screen and (max-width:9999px) {
   .wel-box h4 {
     position: relative;
     padding: 8px 10px 8px 150px;

@@ -1,13 +1,15 @@
 @font-face {
 	font-family: 'fontawesome';
-	src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
-	src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
+	src: url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
+	src: url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
 		url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
 		url('../fonts/fontawesome/fontawesome.ttf?-e43dk9') format('truetype'),
 		url('../fonts/fontawesome/fontawesome.svg?-e43dk9#fontawesome') format('svg');
 	font-weight: normal;
 	font-style: normal;
-} /* Made with http://icomoon.io/app */
+}
+
+/* Made with http://icomoon.io/app */
 
 /* General style */
 .grid-gallery ul {
@@ -30,7 +32,7 @@
 	padding: 0;
 }
 
-.grid-gallery li:hover figcaption h3{
+.grid-gallery li:hover figcaption h3 {
 	color: #4394d0;
 }
 
@@ -40,7 +42,7 @@
 	color: #777;
 }
 
-/* Grid style */
+/* Grid style *//*1排4個*/
 .grid-wrap {
 	max-width: 69em;
 	margin: 0 auto;
@@ -72,24 +74,54 @@
 	padding: 25px;
 }
 
-/* src-grid-style*/
+/* src-grid-style*//*1排3個*/
 .grid-src {
 	margin: 0 auto;
 }
+
 .grid-src li {
 	width: 30%;
 	float: left;
 	cursor: pointer;
 }
+
 .grid-src figure {
 	padding: 15px;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
+
 .grid-src li:hover figure {
 	opacity: 0.7;
 }
+
 .grid-src figcaption {
+	background: #eeeeee;
+	padding: 25px;
+}
+
+/* src-grid-style*//*1排2個*/
+.grid-rec {
+	margin: 0 auto;
+}
+
+.grid-rec li {
+	width: 50%;
+	float: left;
+	cursor: pointer;
+}
+
+.grid-rec figure {
+	padding: 15px;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.grid-rec li:hover figure {
+	opacity: 0.7;
+}
+
+.grid-rec figcaption {
 	background: #eeeeee;
 	padding: 25px;
 }
@@ -97,7 +129,7 @@
 /* Slideshow style */
 .slideshow {
 	position: fixed;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0, 0, 0, 0.6);
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -124,8 +156,8 @@
 	height: 100%;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-transform: translate3d(0,0,150px);
-	transform: translate3d(0,0,150px);
+	-webkit-transform: translate3d(0, 0, 150px);
+	transform: translate3d(0, 0, 150px);
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 }
@@ -136,8 +168,8 @@
 }
 
 .slideshow-open .slideshow ul {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 .slideshow li {
@@ -161,7 +193,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255, 255, 255, 0.8);
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
@@ -219,6 +251,7 @@
 	padding: 0.5em 1em;
 	color: #31373a;
 }
+
 .slideshow nav span:hover {
 	color: #4394d0;
 }
@@ -240,7 +273,7 @@ span.nav-prev:before {
 	content: "\e601";
 }
 
-span.nav-next:before  {
+span.nav-next:before {
 	content: "\e600";
 }
 
@@ -288,15 +321,19 @@ span.nav-close:before {
 /* Example media queries (reduce number of columns and change slideshow layout) */
 
 @media screen and (max-width: 60em) {
+
 	/* responsive columns; see "Element sizing" on http://masonry.desandro.com/options.html */
-	.grid li {
+	.grid li {/*1排4個*/
 		width: 33.3%;
 	}
 
-	.grid-src li {
+	.grid-src li {/*1排3個*/
 		width: 33.3%;
 	}
 
+	.grid-rec li {/*1排2個*/
+		width: 33.3%;
+	}
 
 	.slideshow li {
 		width: 100%;
@@ -326,50 +363,58 @@ span.nav-close:before {
 
 
 @media screen and (max-width: 1199px) {
-	.grid li {
+	.grid li {/*1排4個*/
 		width: 33.3%;
 	}
-}
-
-@media screen and (max-width: 1199px) {
-	.grid-src li {
+	.grid-src li {/*1排3個*/
 		width: 30%;
 	}
-}
-@media screen and (max-width:991px){
-	.grid li {
-		width:50%;
+	.grid-rec li {/*1排2個*/
+		width: 50%;
 	}
-	.slideshow figure{
+}
+
+@media screen and (max-width:991px) {
+	.grid li {/*1排4個*/
+		width: 50%;
+	}
+
+	.grid-src li {/*1排3個*/
+		width: 50%;
+	}
+	.grid-rec li {/*1排2個*/
+		width: 100%;
+	}
+
+	.slideshow figure {
 		padding-top: 100px;
 	}
 }
-@media screen and (max-width:991px){
-	.grid-src li {
-		width:50%;
-	}
-	.slideshow figure{
-		padding-top: 100px;
-	}
-}
+
+
 @media screen and (max-width: 35em) {
-	.grid li {
+	.grid li {/*1排4個*/
+		width: 100%;
+	}
+	.grid-src li {/*1排3個*/
+		width: 100%;
+	}
+	.grid-rec li {/*1排2個*/
 		width: 100%;
 	}
 }
 
-@media screen and (max-width: 35em) {
-	.grid-src li {
-		width: 100%;
-	}
-}
+
 @media screen and (max-width: 24em) {
-	.grid li {
+	.grid li { /*1排4個*/
+		width: 100%;
+	}
+
+	.grid-src li { /*1排3個*/
+		width: 100%;
+	}
+	.grid-rec li { /*1排2個*/
 		width: 100%;
 	}
 }
-@media screen and (max-width: 24em) {
-	.grid-src li {
-		width: 100%;
-	}
-}
+

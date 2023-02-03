@@ -13156,3 +13156,24 @@ select:focus {
     font-size: 18px;
   }
 
+a {
+    font-size: 30px;
+}
+.contact{
+    text-align: center;
+}
+.button{
+    width: 300px;
+    background: #456185;
+    color: #fff;
+    display: block;
+    border-radius: 5px;
+    padding: 15px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    transition: .5s ease;
+    font-size: 16px;
+}
+a:hover{
+    color: #000;
+}
