@@ -2409,11 +2409,13 @@
   }
   .tparrows {
       top: 50% !important;
-      display: block;
+      display: none;
+      /* display: block; */
   }
   .tp-forcenotvisible {
       visibility: visible !important;
-      display: block !important;
+      display: none !important;
+      /* display: block !important; */
   }
   .main-slider .slide-content{
       display: none;
