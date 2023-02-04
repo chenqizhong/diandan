@@ -34,8 +34,16 @@
                               <li><a href="TechnologyTransfer.html">技術移轉</a></li>
                             </ul>
                           </li>
-                          <li><a href="business.html">業務範圍</a></li>
-                          <li><a href="csr.html">企業社會責任</a></li>
+                          <li class="dropdown"><a id="a3" href="#" onclick="quClickEven('block')">業務範圍</a>
+                           <ul id='ul3'>
+                              <li><a href="business.html">業務簡介</a></li>
+                            </ul>
+                           </li>
+                          <li><a id="a4" href="#" onclick="quClickEven('block')">企業社會責任</a>
+                             <ul id='ul4'>
+                              <li><a href="csr.html">綠能產業與企業ESG</a></li>
+                            </ul>
+                          </li>
                           <li class="dropdown"><a id="a2" href="#" onclick="quClickEven('block')">品質與工安</a>
                               <ul id='ul2'>
                               <li><a href="HSE.html">環安衛</a></li>
@@ -65,20 +73,37 @@
             </div>
           </section>
 		  <script>
-		function doClickEven(str) {
+		/*認識興達海基*/
+    function doClickEven(str) {
 				if(str == 'block')
 					$("#a1").attr("onclick", "doClickEven('')");
 				else
 					$("#a1").attr("onclick", "doClickEven('block')");
 			    $('#ul1').css('display', str);
 			} 
-
+    /*品質與工安*/
      function quClickEven(str) {
 				if(str == 'block')
 					$("#a2").attr("onclick", "quClickEven('')");
 				else
 					$("#a2").attr("onclick", "quClickEven('block')");
 			    $('#ul2').css('display', str);
+			} 
+      /*業務範圍*/
+      function quClickEven(str) {
+				if(str == 'block')
+					$("#a3").attr("onclick", "quClickEven('')");
+				else
+					$("#a3").attr("onclick", "quClickEven('block')");
+			    $('#ul3').css('display', str);
+			} 
+         /*企業社會責任*/
+      function quClickEven(str) {
+				if(str == 'block')
+					$("#a4").attr("onclick", "quClickEven('')");
+				else
+					$("#a4").attr("onclick", "quClickEven('block')");
+			    $('#ul4').css('display', str);
 			} 
 		  </script>
         </div>
