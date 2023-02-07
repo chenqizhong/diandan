@@ -182,6 +182,17 @@
 	visibility: hidden;
 }
 
+.slideshow li.straight {
+	width: 600px;
+	height: 800px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -260px 0 0 -400px;
+	visibility: hidden;
+}
+
+
 .slideshow li.show {
 	visibility: visible;
 }
@@ -343,6 +354,14 @@ span.nav-close:before {
 		margin: 0;
 	}
 
+	.slideshow li.straight{
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		
+	}
 	.slideshow li figure img {
 		width: auto;
 		margin: 0 auto;
