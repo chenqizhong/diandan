@@ -101,8 +101,13 @@
 }
 
 /* src-grid-style*//*1排2個*/
+/* .grid-center{
+	display:block;
+	margin:auto ;
+} */
 .grid-rec {
 	margin: 0 auto;
+	
 }
 
 .grid-rec li {

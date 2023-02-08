@@ -71,7 +71,9 @@ function stickyHeader() {
     };
 }
 
+// console.log('執行這裡');
 function headerStyle() {
+    // console.log('b');
     if($('.header-area.style-four .header-bottom').length){
         var windowpos = $(window).scrollTop();
         var siteHeader = $('.header-area.style-four .header-bottom');
