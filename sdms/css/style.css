@@ -12501,6 +12501,15 @@ select:focus {
     z-index: 10;
 }
 
+.quick-contact-box-New {
+    position: relative;
+    margin-top: -20px;
+    display: block;
+    background: #072d5a;
+    padding: 54px 40px 48px;
+    z-index: 10;
+}
+
 .quick-contact-box .title-box {}
 
 .quick-contact-box .title-box h3 {

@@ -56,6 +56,11 @@
     padding: 8px 10px 8px 150px;
     min-height: 62px;
   }
+  .wel-box h4.oneLine {
+    position: relative;
+    padding: 20px 10px 8px 150px;
+    min-height: 62px;
+  }
 
   .wel-box h4 span {
     padding: 10px;
@@ -67,3 +72,32 @@
   }
 }
 
+
+@media screen and (max-width:575px) {
+  .wel-box h4 {
+    position: relative;
+    padding: 8px 10px 8px 150px;
+    min-height: 62px;
+  }
+  .wel-box h4.oneLine {
+    position: relative;
+    padding: 20px 10px 8px 150px;
+    min-height: 62px;
+  }
+
+
+  .wel-box h4.oneLine2 {
+    position: relative;
+    padding: 10px 10px 8px 150px;
+    min-height: 62px;
+  }
+
+  .wel-box h4 span {
+    padding: 10px;
+    margin-right: 10px;
+    line-height: 50px;
+    position: absolute;
+    left: 15px;
+    top: -5px;
+  }
+}
