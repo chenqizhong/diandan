@@ -13084,6 +13084,9 @@ select:focus {
     display: block;
     margin-bottom: 20px;
 }
+.goalsTitle{
+    font-size: 36px;
+}
 
 .OneESG-fontsize {
     font-size: 25px;
