@@ -47,7 +47,12 @@
 .bg-blue {
   background: #4394d0;
 }
-
+.bg-orange{
+  background: #dc7e33;
+}
+.bg-grey{
+  background: #9d9d9d;
+}
 /* 福利螢幕寬度 */
 
 @media screen and (max-width:9999px) {

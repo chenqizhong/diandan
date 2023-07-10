@@ -31,7 +31,7 @@
                               <li><a href="about.html">公司發展</a></li>
                               <li><a href="history.html">公司大事紀</a></li>
                               <li><a href="ProductionCapacity.html">生產能力</a></li>
-                              <li><a href="TechnologyTransfer.html">技術移轉</a></li>
+                              <li><a href="TechnologyTransfer.html">技術能力</a></li>
                             </ul>
                           </li>
                           <li class="dropdown"><a id="a3" href="#" onclick="quClickEven('block')">業務範圍</a>
@@ -44,7 +44,7 @@
                               <li><a href="csr.html">綠能產業與企業ESG</a></li>
                             </ul>
                           </li>
-                          <li class="dropdown"><a id="a2" href="#" onclick="quClickEven('block')">品質與工安</a>
+                          <li class="dropdown"><a id="a2" href="#" onclick="quClickEven('block')">工安與品質</a>
                               <ul id='ul2'>
                               <li><a href="HSE.html">環安衛</a></li>
                               <li><a href="quality.html">品質系統認證</a></li>
@@ -81,7 +81,7 @@
 					$("#a1").attr("onclick", "doClickEven('block')");
 			    $('#ul1').css('display', str);
 			} 
-    /*品質與工安*/
+    /*工安與品質*/
      function quClickEven(str) {
 				if(str == 'block')
 					$("#a2").attr("onclick", "quClickEven('')");
