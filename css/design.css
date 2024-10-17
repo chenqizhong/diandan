@@ -1,0 +1,71 @@
+
+body {
+  background-color: #ffffff;
+}
+div.bg{
+  position: sticky;
+  top:0;
+} 
+nav img {
+  position: relative;
+  width: 120px;
+  object-fit: cover;
+  padding: 0px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0px 40px;
+}
+
+li {
+  padding: 10px 0px;
+}
+
+li a {
+  color: #000000;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+div.img {
+        text-align: center;
+    }
+    ol a:hover{
+color: #6b6b6b;
+    } 
+article div {
+        /*div框框*/
+        margin: 20px;
+    }
+
+    article img.titleimg {
+        display: block;
+        margin: auto;
+        max-width: 600px;
+        width: 80%;
+        object-position: 50% 100%;
+    }
+    article img.titleimg2 {
+      display: inline-block;
+      margin: auto;
+      max-width: 300px;
+      width: 80%;
+      object-position: 50% 100%;
+  }
+    article p, h1,h2 {
+        padding: 5px;
+        margin: auto;
+        max-width: 600px;
+        width: 80%;
+    }
+   footer div {
+            background-color: #cccccc57;
+    }
+footer p {
+padding: 1px 0 0 30px;
+margin: 0px;
+}

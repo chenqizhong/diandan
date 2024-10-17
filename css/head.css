@@ -1,0 +1,31 @@
+body {
+background-color: #ffffff;
+}
+div.bg{
+position: sticky;
+top:0;
+} 
+nav img {
+position: relative;
+width: 120px;
+object-fit: cover;
+padding: 0px;
+}
+
+nav a {
+color: black;
+text-decoration: none;
+margin: 0px 40px;
+}
+
+li {
+padding: 10px 0px;
+}
+
+li a {
+color: #000000;
+}
+
+li a:hover {
+text-decoration: underline;
+}
