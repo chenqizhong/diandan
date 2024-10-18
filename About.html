@@ -11,24 +11,32 @@
     <link href="./css/about.css" rel="stylesheet">
     <link href="../css/design.css" rel="stylesheet">
     <style>
+        article {
+            text-align: center; /* 置中所有內容 */
+            padding: 20px; /* 添加上下內邊距 */
+        }
+
         article h2.about {
-            margin: 0 0 0 30%;
             font-size: 50px;
+            margin: 0 0 20px; /* 下邊距 */
         }
 
         article h3.about {
             color: #9999b3;
-            margin: 0 0 0 30%;
+            margin: 10px 0; /* 調整上下邊距 */
         }
 
         article img.about {
-            margin: 0 0 0 30%;
-            max-width: 50%;
+            max-width: 90%; /* 讓圖片寬度自適應 */
+            height: auto; /* 自動高度保持比例 */
+            margin: 20px auto; /* 上下留白並置中 */
+            border-radius: 10px; /* 可選：圓角 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 可選：陰影效果 */
         }
 
         article p.about {
-            margin: 0 0 0 30%;
-            max-width: 50%;
+            max-width: 80%; /* 設定最大寬度 */
+            margin: 20px auto; /* 上下留白並置中 */
             padding: 10px;
         }
     </style>
@@ -54,12 +62,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="./About.html">關於 About</a>
                                 </li>
-       
                                 <li class="nav-item">
-                                    <a class="nav-link " href="./Service.html">設計服務 Service</a>
+                                    <a class="nav-link" href="./Service.html">設計服務 Service</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="./Contact.html">聯絡 Contact</a>
+                                    <a class="nav-link" href="./Contact.html">聯絡 Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -68,10 +75,10 @@
             </div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="../index.html">首頁 Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">關於 About</li>
+                    <li class="breadcrumb-item"><a href="../index.html">首頁 Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">關於 About</li>
                 </ol>
-              </nav>
+            </nav>
             <div class="col-xl-12 p-0">
                 <div>
                     <article>
@@ -79,21 +86,14 @@
                         <h3 class="about">English</h3>
                         <img class="about" src="./photo/logo.png" alt="圖片載入中">
                         <p class="about">簡單點的設計，吸引人的注意 <br>
-                            為什麼要設計？
-                            <br>
-                            是為了讓客戶以最短的時間，了解你。
-                            <br>
+                            為什麼要設計？<br>
+                            是為了讓客戶以最短的時間，了解你。<br>
                             好的設計，不需過於華麗的點綴，而是讓消費者只看一眼，就認定 _____我就是要你。
                         </p>
                     </article>
-
                 </div>
             </div>
-
-
         </div>
-    </div>
-    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
