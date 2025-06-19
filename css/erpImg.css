@@ -1,0 +1,11 @@
+img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+}
