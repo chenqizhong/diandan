@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】工程圖製圖派工系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="../css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <style>
+        img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+        }
+    </style>
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+
+            <!-- 系統流程 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/workAssign/process.jpg">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>派工系統表單簽核流程設計</h1>
+                        <p>1. 製圖單位主管可使用該系統派工給製圖工程師。</p>
+                        <p>2. 收到工令單後可依照需求，繪製設計圖，以及相關附件資料。</p>
+                        <p>3. 結構圖繪製完成後，可直接派發給需求提出單位，並且自動記錄所有簽核流程。</p>
+                        <p>4. 結案後，自動歸檔並保存圖面，做為追溯資料。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工程圖製圖派工系統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>工程圖製圖派工系統</h1>
+                        <p>透過系統配發製圖派工單，並紀錄所有表單資料流向，最終自動歸檔。</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/workAssign/from.gif">
+                    </div>
+                </div>
+            </div>
+            <!-- 工程圖製圖派工查詢報表 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <!-- 成本Bom結構維護 -->
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/workAssign/report.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>工程圖製圖派工查詢報表</h1>
+                        <p>可透過報表，追溯派工單<b>歷史資料</b>，以及所有派工單目前的<b>單況</b>。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

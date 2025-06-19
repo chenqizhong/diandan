@@ -1,0 +1,30 @@
+div.in {
+    margin: 20px auto;
+    /* 自動左右邊距並添加上下邊距 */
+    max-width: 800px;
+    /* 限制最大寬度 */
+    padding: 20px;
+    /* 添加內邊距 */
+    background-color: #f9f9f9;
+    /* 可選：背景顏色 */
+    border-radius: 10px;
+    /* 可選：圓角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 可選：陰影效果 */
+}
+
+img.logo {
+    max-width: 20%;
+    display: block;
+    margin: 10px auto;
+    /* 上下留白並置中 */
+}
+
+.card {
+    margin: 10px auto;
+    /* 上下留白並置中 */
+    width: 100%;
+    /* 確保卡片佔滿父容器 */
+    max-width: 30rem;
+    /* 最大寬度 */
+}

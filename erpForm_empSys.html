@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】營運系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="../css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <style>
+        img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+        }
+    </style>
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+
+            <!-- 左切版區塊 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <!-- 成本Bom結構維護 -->
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/costBom.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>成本樹狀結構維護作業</h1>
+                        <p>可將成本以<b>樹狀結構</b>的方式細項分解，每一筆成本都可以拆分到最細節的項目，並且逐項紀錄詳細資訊，以便追溯所有成本的評估。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITT專案組織成員調查 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>專案組織成員調查系統</h1>
+                        <p>營運單位可透過<b>專案組織成員調查系統</b>發佈專案組織成員調查給各單位主管，來實現無紙化調查專案成員的作業。</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/form_ITTsent.gif">
+                    </div>
+                </div>
+            </div>
+            <!-- ITT專案組織成員回報 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <!-- 成本Bom結構維護 -->
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/form_IttBack.gif">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>專案組織成員回報</h1>
+                        <p>各單位主管，收到營運單位的調查單後，即可透過系統<b>直接指派</b>應參與該專案的成員。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 成本回報 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>成本回報系統</h1>
+                        <p>營運單位可以透過<b>成本回報系統</b>依照對應專案的<b>成本樹狀結構</b>發送成本調查的詢問單，並且會依照指定的單位發送調查單給參與該專案的成員。</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/form_costBack.gif">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 成本結算系統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <!-- 成本Bom結構維護 -->
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/report_cost.gif">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>成本結算</h1>
+                        <p>將所有成本費用收集完成後，可直接點擊<b>成本結算按鈕</b>，系統將自動依照樹狀結構，將所有蒐集回來的成本細項逐筆計算，並以完整的樹狀圖顯示所有成本費用，方便管理者清楚觀看所有成本的組成，更便利管理。
+                        </p>
+                        <p style="color: brown;">※支援多版本成本結算</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 報價試算 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>報價試算系統</h1>
+                        <p>營運單位可以透過<b>報價試算系統</b>將結算完成的成本(可自行選定用於試算的版次)，再以多種條件來試算新的建議報價的金額，以便用於後續報價。</p>
+                        <p style="color: brown;">例如：成本100，公司希望執行該專案可獲得10%毛利，則系統可依條件自動計算： 100 ÷ (1 - 10%) = 100 ÷ 0.9 =
+                            111.11</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/form_Qprice.gif">
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- 報價單建立統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/from_Quote.gif">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>報價單建立作業</h1>
+                        <p>業務單位可使用<b>報價作業</b>取用已試算完成的期望金額(取用後報價金額仍可再調整，需經過簽核)，來建立報價單並且支援「未稅、含稅」自動計算報價的功能。</p>
+                        <p style="color: brown;">※支援匯出Excel功能；匯出Word功能</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 預算編列調整系統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>預算調整系統</h1>
+                        <p>營運單位可使用<b>預算編列調整系統</b>針對已成交的專案，取得報價時所引用的期望值，來建立對應的預算項目，也可以依照實際情況再調整(需經過簽核)，達到實際預算的花費控管。</p>
+                        <p style="color: brown;">※如有調整預算，系統會自動發送通知給該專案的所有管理人員</p>
+                        <img src="./photo/erpForm/empSys/bugetMessage_show.png" style="width: 70%;">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/bugetMessage_form.png">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- 預算總表 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>專案營運管理表</h1>
+                        <p>公司老闆可透過<b>專案營運管理表</b>來處看出，所有專案的詳細資訊(包含：成本、報價、實際花費、預估毛利、實際毛利等...)讓經理人可以快速掌握專案執行的所有資訊。</p>
+                         <p style="color: brown;">系統將依照樹狀結構，逐筆顯示所有成本細項的預估成本、報價成本、實際花費...等。</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/empSys/report_total.png">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

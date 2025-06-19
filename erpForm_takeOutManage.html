@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】物品攜出管理系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="../css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <style>
+        img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+        }
+    </style>
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+
+
+
+            <!-- 系統流程 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/takeOutManage/流程.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>物品攜出管理系統</h1>
+                        <p>1. 控管離廠人員/廠商所攜出的物品。</p>
+                        <p>2. 依照申請內容，在完成簽核後自動配發至預計離廠的門哨口，大幅提高資料傳遞的效率。</p>
+                        <p>3. 透過報表可追溯所有公司資產的流向。</p>
+                        <p>4. 申請單自動結案機制(已成立的申請單，如未於4小時內離廠，申請單將自動停效)。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 表單說明 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center ">
+                <div class="col-md-12">
+                    <div class="p-3  border bg-light mx-auto" style="width: 50%;">
+                        <!-- 右邊內容 -->
+                        <h1 class="text-center">物品攜出申請單</h1>
+                        <div class="text-left">
+                            <p>1. 離廠人員可填寫<b>物品攜出申請單</b>同時填寫預計離廠哨口，填寫完成後需經過簽核(協力廠商物品攜出則須經過主辦單位核准)。</p>
+                            <p>2. 當核准後該申請單將自動配發至預計離廠哨口保全的<b>平板</b>，人員即可前往哨口離廠。</p>
+                        </div>
+                    </div>
+
+
+                    <!-- 物品攜出填寫單/門哨控管單 -->
+                    <div class="row justify-content-center mt-5 d-flex align-items-center">
+                        <div class="col-md-6">
+                            <div class="p-3 text-left border bg-light">
+                                <img src="./photo/erpForm/takeOutManage/from_create.gif">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 text-center border">
+                                <!-- 左邊內容 -->
+                                <img src="./photo/erpForm/takeOutManage/from_checkOut.gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 攜出單自動停效排程 -->
+                    <div class="p-3  border bg-light mx-auto" style="width: 50%;">
+                        <!-- 中間內容 -->
+                        <h1 class="text-center">攜出單自動停效機制</h1>
+                        <div class="text-left">
+                            <p>1. 每張攜出單都有自動計時功能，當時間截止未離廠，該攜出單將自動停效。</p>
+                            <p>(有效控管所有離廠物品狀況)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -8,64 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="./css/head.css" rel="stylesheet">
+    <link href="./css/contact.css" rel="stylesheet">
+    
     <style>
-        div.in {
-            margin: 20px auto; /* 自動左右邊距並添加上下邊距 */
-            max-width: 800px; /* 限制最大寬度 */
-            padding: 20px; /* 添加內邊距 */
-            background-color: #f9f9f9; /* 可選：背景顏色 */
-            border-radius: 10px; /* 可選：圓角 */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 可選：陰影效果 */
-        }
-
-        img.logo {
-            max-width: 20%;
-            display: block;
-            margin: 10px auto; /* 上下留白並置中 */
-        }
-
-        .card {
-            margin: 10px auto; /* 上下留白並置中 */
-            width: 100%; /* 確保卡片佔滿父容器 */
-            max-width: 30rem; /* 最大寬度 */
-        }
-
+        
     </style>
+    <script>
+        // 表頭選單掛進進來
+        fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-ms-12 col-xl-12 px-0 bg">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="./photo/logo.png" alt="圖片載入中">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">首頁 Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./About.html">關於 About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Service.html">設計服務 Service</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Contact.html">聯絡 Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+            <div id="header"></div>
             <div>
                 <img class="logo" src="./photo/logo.png" alt="圖片載入中">
             </div>
@@ -104,7 +66,8 @@
                                                     <h2 class="text-center">社群網站</h2>
                                                 </div>
                                                 <p>IG：diandan_design</p>
-                                                <a href="https://www.instagram.com/diandan_design?igsh=MXduOGs1Mm5tMnR6cg%3D%3D&utm_source=qr" class="btn btn-outline-secondary"
+                                                <a href="https://www.instagram.com/diandan_design?igsh=MXduOGs1Mm5tMnR6cg%3D%3D&utm_source=qr"
+                                                    class="btn btn-outline-secondary"
                                                     target="_blank">前往「單點行銷設計Instagram」</a>
                                             </div>
                                         </div>

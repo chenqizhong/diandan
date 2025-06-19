@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】公安管理系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="../css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <style>
+        img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+        }
+    </style>
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+
+            <!-- 系統流程 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/workSafe/流程.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>公安事故調查流程設計</h1>
+                        <p>1. 工安事故發單位填寫事故相關資訊。</p>
+                        <p>2. 公安單位收到事故通知單後，立即展開事故調查，所有資訊皆可記錄於表單上。</p>
+                        <p>3. 調查完成後，可透過系統將調查報告陳和指定層級主管。</p>
+                        <p>4. 結案後，自動歸檔並保存圖面，做為追溯資料。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 公安事故調查系統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>公安事故調查系統</h1>
+                        <p>事故發生單位、公安單位、相關單位皆可透過該系統清楚掌握工安<b>事故的發生</b>、<b>調查過程</b>及<b>解決方案</b>。</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/workSafe/form.gif">
+                    </div>
+                </div>
+            </div>
+            <!-- 公安事故調查查詢報表 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <!-- 成本Bom結構維護 -->
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/workSafe/report.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>公安事故調查查詢報表</h1>
+                        <p>可透過報表，追溯派所有事故單的<b>歷史資料</b>，以及所有工安事故調查目前的<b>處理進度</b>。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

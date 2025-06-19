@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-TW">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link href="./css/head.css" rel="stylesheet">
+  <link href="./css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+  <link href="./css/contact.css" rel="stylesheet"> <!--方塊css-->
   <style>
     article {
       padding: 10px;
@@ -17,25 +20,15 @@
       text-align: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; /* 置中顯示 */
+      justify-content: center;
+      /* 置中顯示 */
     }
 
     article div.image-container {
-      padding: 10px; /* 留白邊 */
-      background-color: #ffffff; /* 背景色 */
-    }
-
-    article img.index {
-      margin: 0; /* 去除邊距 */
-      width: 100%; /* 設定為100%以適應容器 */
-      max-width: 400px; /* 設定最大寬度 */
-      height: auto; /* 自動高度以保持比例 */
-      object-fit: cover; /* 保持圖片比例 */
-      transition: 0.5s;
-    }
-
-    article img.index:hover {
-      opacity: 0.3;
+      padding: 10px;
+      /* 留白邊 */
+      background-color: #ffffff;
+      /* 背景色 */
     }
 
     article a {
@@ -49,93 +42,72 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-KES2W2KEWQ');
+
+  // 表頭選單掛進進來
+  fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
 </script>
+<!-- google analytics代碼END -->
+
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-ms-12 col-xl-12 px-0 bg">
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./photo/logo.png" alt="圖片載入中"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">首頁 Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./About.html">關於 About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Service.html">設計服務 Service</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Contact.html">聯絡 Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <div id="header"></div>
       <div class="col-xl-12 p-0">
         <article class="px-0">
-          <div class="photo">
-            <div class="image-container">
-              <a href="./design/chentenfun.html">
-                <img class="index" src="./photo/chentenfun/chentenfun-logo3.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/huayi.html">
-                <img class="index" src="./photo/huayi/huayi-name2-jin.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/liji.html">
-                <img class="index" src="./photo/lijinamecad/lijinamecad-namecard.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/meijang_lu.html">
-                <img class="index" src="./photo/meijang/meijang-ludm.png" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/meijang_oil.html">
-                <img class="index" src="./photo/meijang/meijang-jinoil-dm_low.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/meijang.html">
-                <img class="index" src="./photo/meijang/S__5513705.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/calligraphy.html">
-                <img class="index" src="./photo/oter/ok59x34-01.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/sowdonten.html">
-                <img class="index" src="./photo/sowdonten/sowdonten-logo.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/spring.html">
-                <img class="index" src="./photo/spring/spring-logo2.jpg" alt="圖片載入中" loading="lazy">
-              </a>
-            </div>
-            <div class="image-container">
-              <a href="./design/sumdow.html">
-                <img class="index" src="./photo/sumdow/sumdow-logo2.jpg" alt="圖片載入中" loading="lazy">
-              </a>
+          <div class="in">
+            <div class="row g-2 mt-3">
+              <div class="form-floating">
+                <div class="container row">
+                  <div class="col-xl-6 col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                          <h2 class="text-center">【行銷】商用設計</h2>
+                          <img style="width: 16rem;"
+                            src="https://qr-official.line.me/gs/M_892fytnb_BW.png?oat_content=qr">
+                          <a href="./graphicDesign.html" class="btn btn-outline-secondary">前往「作品集」</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--  -->
+                  <div class="col-xl-6 col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                          <h2 class="text-center">【前端】網頁設計</h2>
+                          <img style="width: 16rem;"
+                            src="https://qr-official.line.me/gs/M_892fytnb_BW.png?oat_content=qr">
+                          <a href="./webDesign.html" class="btn btn-outline-secondary">前往「作品集」</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-xl-6 col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                          <h2 class="text-center">【後端】ERP系統</h2>
+                          <img style="width: 16rem;"
+                            src="https://qr-official.line.me/gs/M_892fytnb_BW.png?oat_content=qr">
+                          <a href="./erpForm_Design.html" class="btn btn-outline-secondary" >前往「作品集」</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
             </div>
           </div>
         </article>

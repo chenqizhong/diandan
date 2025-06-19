@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】訪客系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="../css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <style>
+        img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+        }
+    </style>
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+
+            <!-- 訪客證申請連結 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-3">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <a href="https://visit.sdms.com.tw/index.html" target="_blank">
+                            <img class="index" src="./photo/erpForm/visit/Snipaste_2025-06-11_10-46-30.png" alt="圖片載入中"
+                                loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>訪客證申請系統</h1>
+                        <p>外部人員可透過<b>訪客證申請系統</b>填寫拜訪時間與目的。</p>
+                        <p style="color: brown;">←(滑鼠點擊前往訪客系統)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QRocdr -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>訪客證</h1>
+                        <p>申請完成後，系統自動產出訪客證，申請人可自行保管，用於入廠時門哨保全刷卡檢驗。</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/visit/qrcode.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 二次驗證系統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img class="index" src="./photo/erpForm/visit/二次驗證管理系統(登入).png" alt="圖片載入中" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>被拜訪人二次驗證訪客申請</h1>
+                        <p>被拜訪人員可透過系統查看，已申請拜訪的訪客證。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 管理功能選單 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>內部人員管理功能</h1>
+                        <p>內部人員，可透過管理系統<b>代理訪客證申請</b>或<b>管理已申請的訪客證</b>。</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/visit/管理選單.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 二次驗證管理 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img class="index" src="./photo/erpForm/visit/管理報表.png" alt="圖片載入中" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>被拜訪人管理訪客證申請</h1>
+                        <p>被拜訪人員可<b>允許</b>或<b>禁止</b>欲拜訪自己的訪客證。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 管理功能選單 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>門哨保全管理系統</h1>
+                        <p>被允許入廠的訪客證，拜訪人可於<b>拜訪當日</b>，持訪客證QEcode至公司門哨入口，透過掃描機刷卡入廠。</p>
+                        <p>已進廠的訪客，資料會即時顯示在門哨保全的管理介面，保全可清楚掌握<b>目前廠內有多少訪客、何時進廠、來拜訪誰以及從哪一個哨口進廠</b>。</p>
+                        <p>訪客離廠時，可<b>自行刷卡離廠</b>或由哨口保全<b>直接從系統上設定離廠</b>簡單方便管理廠內訪客人數。</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/visit/管理介面.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

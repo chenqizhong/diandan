@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】車輛管制系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/head.css" rel="stylesheet">
+    <link href="../css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="../css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <style>
+        img {
+            width: 100%;
+            /* 設定為100%以適應容器 */
+            height: 100%;
+            /* 保持圖片比例 */
+            margin: 0;
+            /* 去除邊距 */
+            transition: 0.5s;
+            display: block;
+            /* 確保圖片是塊級元素 */
+        }
+    </style>
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+
+            <!-- 系統流程 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/carManage/流程.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>車輛管制系統</h1>
+                        <p>1. 停車證申請。</p>
+                        <p>2. 停車證效期管理(自動停用過期車證)。</p>
+                        <p>3. 停車證批次瀏覽報表。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 停車證申請作業 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>停車證申請作業</h1>
+                        <p>同仁可自行透過系統申請停車證，系統可自動檢驗<b>行照、駕照</b>是否上傳，以及<b>身分證字號</b>填寫是否符合規則，大幅減少人為疏失。</p>
+                        <p>(搭載簽核功能，申請後可自動向上級陳核，並且在陳核完成同時，自動送至主辦單位，並且歸檔。)</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/carManage/form.gif">
+                    </div>
+                </div>
+            </div>
+            <!-- 停車證查詢報表 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/carManage/report.png">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>停車證查詢報表</h1>
+                        <p>車證管理單位，可透過<b>停車證查詢報表</b>查看，所有已申請完成的停車證，包含當初申請時的所有附檔資料(駕照、行照等...)，同時也可以從後台直接管理該車證的啟用狀態，隨時可以掌握所有廠區車輛資訊。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 自動排程 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center mx-auto" style="width: 50%;">
+                <div class="col-md-12">
+                    <div class="p-3 text-center border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>自動排程</h1>
+                        <p>結合後端自動排程功能，系統將於每日23:59自動掃描所有已過期車證，並將其停用，已達到有效車證控管。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

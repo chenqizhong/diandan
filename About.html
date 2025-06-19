@@ -12,67 +12,60 @@
     <link href="../css/design.css" rel="stylesheet">
     <style>
         article {
-            text-align: center; /* 置中所有內容 */
-            padding: 20px; /* 添加上下內邊距 */
+            text-align: center;
+            /* 置中所有內容 */
+            padding: 20px;
+            /* 添加上下內邊距 */
         }
 
         article h2.about {
             font-size: 50px;
-            margin: 0 0 20px; /* 下邊距 */
+            margin: 0 0 20px;
+            /* 下邊距 */
         }
 
         article h3.about {
             color: #9999b3;
-            margin: 10px 0; /* 調整上下邊距 */
+            margin: 10px 0;
+            /* 調整上下邊距 */
         }
 
         article img.about {
-            max-width: 90%; /* 讓圖片寬度自適應 */
-            height: auto; /* 自動高度保持比例 */
-            margin: 20px auto; /* 上下留白並置中 */
-            border-radius: 10px; /* 可選：圓角 */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 可選：陰影效果 */
+            max-width: 90%;
+            /* 讓圖片寬度自適應 */
+            height: auto;
+            /* 自動高度保持比例 */
+            margin: 20px auto;
+            /* 上下留白並置中 */
+            border-radius: 10px;
+            /* 可選：圓角 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* 可選：陰影效果 */
         }
 
         article p.about {
-            max-width: 80%; /* 設定最大寬度 */
-            margin: 20px auto; /* 上下留白並置中 */
+            max-width: 80%;
+            /* 設定最大寬度 */
+            margin: 20px auto;
+            /* 上下留白並置中 */
             padding: 10px;
         }
     </style>
+    <script>
+        // 表頭選單掛進進來
+        fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-ms-12 col-xl-12 px-0 bg">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html"><img src="./photo/logo.png" alt="圖片載入中"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">首頁 Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./About.html">關於 About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Service.html">設計服務 Service</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Contact.html">聯絡 Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+           <div id="header"></div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../index.html">首頁 Home</a></li>
