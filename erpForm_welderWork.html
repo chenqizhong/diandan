@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單點行銷設計-【後端ERP】銲工工作紀錄</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="./css/head.css" rel="stylesheet">
+    <link href="./css/workLightbox.css" rel="stylesheet"> <!--作品燈箱css-->
+    <link href="./css/contact.css" rel="stylesheet"> <!--方塊css-->
+    <link href="./css/erpImg.css" rel="stylesheet"> <!--方塊css-->
+
+</head>
+<!-- google analytics代碼 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KES2W2KEWQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KES2W2KEWQ');
+
+    // 表頭選單掛進進來
+    fetch('menuList.txt')  // 或 'menu.txt'，取決於你的檔案名稱
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+<!-- google analytics代碼END -->
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header"></div>
+            </div>
+            <!-- 麵包屑 -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">首頁 Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a
+                            href="./erpForm_Design.html">【後端】ERP系統作品</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">【後端ERP】銲工工作紀錄</li>
+                </ol>
+            </nav>
+
+            <!-- 銲工工作紀錄 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-3">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img class="index" src="./photo/erpForm/welderWork/流程.png" alt="圖片載入中" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>銲工工作紀錄</h1>
+                        <p>1. 現場監工可透過該系統，填寫每日生產報工資訊。</p>
+                        <p>2. 產出每日生產報表，讓管理單位更容易掌握現場生產進度。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QRocdr -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>報工作業</h1>
+                        <p>用於現場監工寫報工資訊，內容包含(人員、每日進度、容填量、工站、工位...等生產訊)</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img src="./photo/erpForm/welderWork/from_welderWork.gif">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 二次驗證系統 -->
+            <div class="row justify-content-center mt-5 d-flex align-items-center">
+                <div class="col-md-7">
+                    <div class="p-3 text-center border">
+                        <!-- 左邊內容 -->
+                        <img class="index" src="./photo/erpForm/welderWork/report_welderWork.gif" alt="圖片載入中"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-3 text-left border bg-light">
+                        <!-- 右邊內容 -->
+                        <h1>人員工作進度檢視報表</h1>
+                        <p>1.生產主管可透過<b>人員工作進度檢視報表</b>輕易掌握每天的工作進度。</p>
+                        <p>2.點擊人員資訊後，可自動計算出該人員指定日期區間內的所有工作資訊，有助評估績效等。</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>
