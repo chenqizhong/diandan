@@ -1,11 +1,12 @@
-
 body {
   background-color: #ffffff;
 }
-div.bg{
+
+div.bg {
   position: sticky;
-  top:0;
-} 
+  top: 0;
+}
+
 nav img {
   position: relative;
   width: 120px;
@@ -32,40 +33,48 @@ li a:hover {
 }
 
 div.img {
-        text-align: center;
-    }
-    ol a:hover{
-color: #6b6b6b;
-    } 
-article div {
-        /*div框框*/
-        margin: 20px;
-    }
+  text-align: center;
+}
 
-    article img.titleimg {
-        display: block;
-        margin: auto;
-        max-width: 600px;
-        width: 80%;
-        object-position: 50% 100%;
-    }
-    article img.titleimg2 {
-      display: inline-block;
-      margin: auto;
-      max-width: 300px;
-      width: 80%;
-      object-position: 50% 100%;
-  }
-    article p, h1,h2 {
-        padding: 5px;
-        margin: auto;
-        max-width: 600px;
-        width: 80%;
-    }
-   footer div {
-            background-color: #cccccc57;
-    }
+ol a:hover {
+  color: #6b6b6b;
+}
+
+article div {
+  /*div框框*/
+  margin: 20px;
+}
+
+article img.titleimg {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  width: 80%;
+  object-position: 50% 100%;
+}
+
+article img.titleimg2 {
+  display: inline-block;
+  margin: auto;
+  max-width: 300px;
+  width: 80%;
+  object-position: 50% 100%;
+}
+
+article p,
+h1,
+h2 {
+  padding: 5px;
+  margin: auto;
+  max-width: 600px;
+  width: 80%;
+}
+
+footer div {
+  background-color: #cccccc57;
+}
+
 footer p {
-padding: 1px 0 0 30px;
-margin: 0px;
+  padding: 1px 0 0 30px;
+  margin: 0px;
 }
